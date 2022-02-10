@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Ephesis&family=Parisienne&display=swap");
+
+
+footer {
+
+    @media (max-width:768px) {
+display: none;        
+    }
+ 
+  .footer-left {
+    position: fixed;
+    bottom: 10px;
+    left: 20px;
+    i {
+      font-size: 1.2em;
+      color: white;
+      margin: 20px 10px;
+      &:hover{
+          color: greenyellow;
+          transform: translateY(-3px);
+      }
+    }
+
+    .line {
+      border-right: 1px solid white;
+      padding: 20px;
+      height: 100px;
+      background-color: transparent;
+      transform: translatex(-19px);
+      margin-top: 15px;
+    }
+  }
+
+
+  .footer-right {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    i{
+      font-size: 1.2em;
+      color: white;
+      margin: 15px 10px;
+      &:hover{
+          color: greenyellow;
+          transform: translateY(-3px);
+      }
+
+      
+    }
+
+    a{
+        writing-mode: vertical-rl;
+        transform: translatex(10px);
+        color: white;
+        font-size: 1em;
+        &:hover{
+            color: greenyellow;
+            text-decoration: none;
+        }
+    }
+
+    .line {
+      border-right: 1px solid white;
+      padding: 20px;
+      height: 100px;
+      background-color: transparent;
+      transform: translatex(-19px);
+      margin-top: 15px;
+    }
+  }
+}
+
+
+
+#myBtn {
+
+
+  display: none;
+  position: fixed;
+  bottom: 8%;
+
+    right: 10%;
+  
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--wblue);
+  cursor: pointer;
+  border-radius: 8px;
+padding: 3px 8px;
+i{color: white;
+  font-size: 1.5em;
+
+}}
+
+#myBtn:hover {
+  background-color:rgba(255, 255, 255, 0.87);
+i{
+  color:var(--blue);
+
+}  box-shadow:3px 3px rgba(255, 255, 255, 0.1);
+}
+
+  .social-links {
+
+    i{ margin: 0px 10px;}
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+padding: 20px 0px;  }

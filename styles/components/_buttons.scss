@@ -1,0 +1,40 @@
+.btn-green {
+  border: 2px solid var(--green);
+  padding: 8px;
+  color:white;
+  border-radius: 5px;
+
+  &:hover {
+    color: rgb(197, 197, 197);
+    background-color: var(--lgreeno);
+  }
+}
+
+.btn-blue{
+    border: 2px solid var(--blue);
+    padding: 8px;
+    color:white;
+    border-radius: 5px;
+  
+    &:hover {
+      color: rgb(197, 197, 197);
+      background-color: var(--bblue);
+    }
+}
+
+.rotating-icon, .rotated-icon {
+  transform: rotate(45deg) !important;
+  z-index: 100;
+
+  &:hover {
+    transform: rotate(90deg) !important;
+    transition: 0.6s;
+
+
+  }
+  &:active &:focus {
+    transform: rotate(90deg) !important;
+    border: transparent !important;
+  }
+}
+
