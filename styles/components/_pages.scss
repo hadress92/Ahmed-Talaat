@@ -1,24 +1,25 @@
-
 // INTRODUCTION
-.intro{
-    padding-top: 120px;
+.intro {
+  //   padding-top: 120px;
 }
 
 // ABOUT
 
-
-.section-header{
-    padding-top:150px ;
-    hr{
-        position: relative;
-        top:30%;
-        color: var(--blue);
-        width: 70%;
-    }
+.section-header {
+  padding-top: 60px;
+  hr {
+    position: relative;
+    top: 30%;
+    color: var(--blue);
+    width: 70%;
+  }
 }
 
-#v-pills-tab{
-    border: none;
+#v-pills-tab {
+  border: none;
 }
 
-
+.icon-png {
+  height: 15px;
+  width: 15px;
+}

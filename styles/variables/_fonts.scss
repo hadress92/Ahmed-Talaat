@@ -1,6 +1,3 @@
-
-
-
 h2 {
   color: white;
   font-size: 2.3em;
@@ -29,11 +26,10 @@ h4 {
   @media (min-width: 768px) {
     font-size: 2em;
     margin: 0px 0px;
-
   }
 }
 
-h5{
+h5 {
   color: white;
   display: inline-block;
 }
@@ -49,7 +45,6 @@ h6 {
   }
 }
 
-
 a {
   color: var(--lgreen);
   text-decoration: none;
@@ -62,19 +57,19 @@ a {
   }
 }
 
-ul{
-
-    padding-top:20px;
-    padding-bottom: 50px;
+ul {
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
-.iconed-list li{
-    list-style-image:url(../svg/list.svg);
-    color: var(--mdgrey);
-  
-    padding:10px 10px 0px 10px;
-    margin: 5px;
-    min-width: 200px;
-    padding: 0%;
+.iconed-list li {
+  // list-style-image:url(../svg/list.svg);
+  list-style: none;
+  color: var(--mdgrey);
+
+  padding: 10px 10px 0px 10px;
+  margin: 5px;
+  min-width: 200px;
+  padding: 0%;
 }
 
 p {
@@ -89,45 +84,38 @@ p {
   }
 }
 
-.smaller-p,span{
+.smaller-p,
+span {
   font-size: 1em;
   color: var(--lgrey);
-
 }
-span{
+span {
   color: white;
   padding: 0px 10px;
 
-  &:hover{
+  &:hover {
     font-weight: bolder;
   }
 }
 
-i{
+i {
   color: var(--mdgrey);
 }
 
-.nav-tabs .nav-link{
-
+.nav-tabs .nav-link {
   color: var(--mdgrey);
   background-color: transparent !important;
   // text-decoration: underline;
   text-decoration-color: var(--mdgrey);
 
-  &:focus{
+  &:focus {
     background-color: transparent !important;
     color: var(--lgreen);
     border-bottom-color: var(--lgreen);
-
   }
 
-  &:active{
+  &:active {
     background-color: transparent !important;
     color: var(--lgreen);
- 
-
   }
-
-
-
 }

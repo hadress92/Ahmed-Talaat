@@ -68,8 +68,7 @@ footer .footer-right i:hover {
   transform: translateY(-3px);
 }
 footer .footer-right a {
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   transform: translatex(10px);
   color: white;
   font-size: 1em;
@@ -114,7 +113,6 @@ footer .footer-right .line {
 }
 
 .contact-info {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
@@ -147,7 +145,7 @@ footer .footer-right .line {
   border-radius: 5px;
 }
 .btn-green:hover {
-  color: #c5c5c5;
+  color: rgb(197, 197, 197);
   background-color: var(--lgreeno);
 }
 
@@ -158,7 +156,7 @@ footer .footer-right .line {
   border-radius: 5px;
 }
 .btn-blue:hover {
-  color: #c5c5c5;
+  color: rgb(197, 197, 197);
   background-color: var(--bblue);
 }
 
@@ -243,7 +241,7 @@ ul {
 }
 
 .iconed-list li {
-  list-style-image: url(../svg/list.svg);
+  list-style: none;
   color: var(--mdgrey);
   padding: 10px 10px 0px 10px;
   margin: 5px;
@@ -264,7 +262,8 @@ p {
   }
 }
 
-.smaller-p, span {
+.smaller-p,
+span {
   font-size: 1em;
   color: var(--lgrey);
 }
@@ -284,8 +283,7 @@ i {
 .nav-tabs .nav-link {
   color: var(--mdgrey);
   background-color: transparent !important;
-  -webkit-text-decoration-color: var(--mdgrey);
-          text-decoration-color: var(--mdgrey);
+  text-decoration-color: var(--mdgrey);
 }
 .nav-tabs .nav-link:focus {
   background-color: transparent !important;
@@ -297,12 +295,8 @@ i {
   color: var(--lgreen);
 }
 
-.intro {
-  padding-top: 120px;
-}
-
 .section-header {
-  padding-top: 150px;
+  padding-top: 60px;
 }
 .section-header hr {
   position: relative;
@@ -315,8 +309,12 @@ i {
   border: none;
 }
 
+.icon-png {
+  height: 15px;
+  width: 15px;
+}
+
 .about-img {
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
@@ -389,7 +387,6 @@ i {
 .projects .project-desc {
   padding: 15px;
   background-color: var(--lnavy);
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   border-radius: 8px;
