@@ -295,6 +295,10 @@ i {
   color: var(--lgreen);
 }
 
+.intro {
+  padding-top: 80px;
+}
+
 .section-header {
   padding-top: 60px;
 }
@@ -427,18 +431,30 @@ i {
   font-size: 2.5em;
 }
 
+.contact-info {
+  position: fixed;
+  bottom: 10px;
+  right: 40%;
+}
+
+.row {
+  --bs-gutter-x: 0rem !important;
+}
+
 * {
   font-family: "Red Hat Display", sans-serif;
 }
 
-body, html {
+body,
+html {
   margin: 0% !important;
   max-width: 100% !important;
   overflow-x: hidden !important;
   background-color: var(--navy);
 }
 @media (min-width: 768px) {
-  body, html {
+  body,
+  html {
     padding: 0px 40px;
   }
 }/*# sourceMappingURL=styles.css.map */

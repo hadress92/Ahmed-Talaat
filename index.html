@@ -54,16 +54,16 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark py-3">
       <div class="container-fluid d-flex justify-content-between">
-        <div class="navbar-logo">
+        <div class="navbar-logo d-md-none">
           <a class="navbar-brand navbar-border navbar-content__hidden" href="#"
             >AT</a
           >
         </div>
 
         <!-- Offcanvas  Hidden MENU -->
-        <div class="offcanvas-menu">
+        <div class="offcanvas-menu ">
           <button
-            class="btn navbar-content__hidden rotating-icon"
+            class="btn navbar-content__hidden rotating-icon d-md-none"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasRight"
@@ -118,7 +118,7 @@
 
         <!-- NAVBAR Collapsable -->
         <div
-          class="collapse navbar-collapse justify-content-between align-items-baseline"
+          class="collapse navbar-collapse d-flex justify-content-between align-items-baseline  d-none d-md-block"
           id="navbarNav"
         >
           <a class="navbar-brand navbar-border" href="#">AT</a>
@@ -137,7 +137,7 @@
             </li>
           </ul>
 
-          <a class="btn btn-green" href="./AT-SD-2023.pdf" download>Resume</a>
+          <a class="btn btn-green" href="././AT-SD-2023.pdf" download>Resume</a>
         </div>
       </div>
     </nav>
@@ -146,7 +146,8 @@
         <!-- Introduction Column -->
         <div class="col-lg-7 align-items-center">
           <!-- Introduction -->
-          <div class="intro px-3 px-md-5">
+          <div class="intro px-4
+           px-5">
             <h6>Hi, my name is</h6>
 
             <br />
@@ -174,7 +175,7 @@
             <br />
 
             <a
-              class="btn btn-green btn-lg"
+              class="btn btn-green btn-lg mb-5"
               href="https://calendly.com/atalaat-92/short-discussion?month=2022-02"
               target="_blank"
             >
@@ -199,7 +200,7 @@
           </div>
         </div>
 
-        <div class="about px-3 px-md-5 row" id="about">
+        <div class="about px-5 px-lg-5 row" id="about">
           <div class="section-header row">
             <div class="col-md-4 col-lg-3 col-5">
               <h4 class="py-4">About Me</h4>
@@ -230,9 +231,10 @@
             <br />
             <p>Here are a few technologies I’ve been working with recently:</p>
 
-            <div class="iconed-list d-flex justify-content-center">
+            <div class="iconed-list d-flex justify-content-center align-items-center">
               <ul class="row">
-                <div class="col-3">
+                
+                <div class="col-lg-3 col-md-6 col-xs-12">
                   <li><i class="devicon-php-plain colored"></i> PHP</li>
                   <li>
                     <i class="devicon-symfony-original-wordmark"></i> PHP
@@ -243,7 +245,7 @@
                   </li>
                   <li><i class="devicon-wordpress-plain"></i> PHP Wordpress</li>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-md-6 col-xs-12">
                   <li>
                     <i class="devicon-doctrine-plain colored"></i> Doctrine
                   </li>
@@ -256,13 +258,14 @@
                     <i class="devicon-typescript-plain colored"></i> TypeScript
                   </li>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-md-6 col-xs-12 ">
                   <li><i class="devicon-nodejs-plain colored"></i> Node.js</li>
                   <li><i class="devicon-express-original"></i> Express</li>
                   <li><i class="devicon-mysql-plain"></i> MySQL</li>
                   <li><i class="devicon-mongodb-plain colored"></i> MongoDB</li>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3  col-md-6 col-xs-12 " >
+
                   <li>
                     <i class="devicon-react-original colored"></i> ReactJs
                   </li>
@@ -278,10 +281,11 @@
                   <li><i class="devicon-docker-plain colored"></i> Docker</li>
                 </div>
               </ul>
+              
             </div>
 
             <!-- Work -->
-            <div class="work px-3 px-md-5" id="experience">
+            <div class="work px-3 px-lg-5" id="experience">
               <div class="section-header row">
                 <div class="col-md-4 col-lg-3 col-7">
                   <h4 class="py-4">Where I've Worked</h4>
@@ -545,7 +549,7 @@
 
             <!-- Projects -->
 
-            <div class="projects px-md-5" id="work">
+            <div class="projects px-lg-5" id="work">
               <div class="section-header row">
                 <div class="col-md-4 col-lg-3 col-7">
                   <h4 class="py-4">Some Projects I've Built</h4>
@@ -648,13 +652,7 @@
                     </div>
                     <h2>Kraakman</h2>
                     <p class="text-center">
-                      A vast online marketplace for trucks, tractors, and heavy
-                      machinery, catering to the Netherlands and neighboring
-                      countries. We serve as a one-stop platform for both
-                      individual buyers and large-scale dealers, offering an
-                      extensive selection of new and used machinery. The
-                      platform provides flexible options for purchases,
-                      exchanges, and installment payments.
+A vast online marketplace for trucks, tractors, and heavy machinery in the Netherlands and nearby regions. It caters to both individual buyers and large-scale dealers, offering a wide range of new and used machinery, along with flexible purchasing, exchange, and installment options
                     </p>
                     <div class="d-flex justify-content-between">
                       <span>PHP</span>
@@ -714,14 +712,7 @@
                     </div>
                     <h2>CSI Fresh</h2>
                     <p class="text-center">
-                      A major logistics powerhouse managing comprehensive
-                      inbound and outbound logistics operations for the
-                      Netherlands. overseeing all modes of transportation,
-                      including land, sea, and air, while seamlessly
-                      orchestrating thousands of daily shipments. The platform
-                      efficiently coordinates these shipments with a vast
-                      network of large-scale vendors, ensuring a smooth and
-                      reliable logistics experience.
+                      A leading logistics hub overseeing all transportation modes, handling thousands of daily shipments in the Netherlands. The platform efficiently coordinates with large-scale vendors for a seamless and reliable logistics experience.
                     </p>
                     <div class="d-flex justify-content-between">
                       <span>PHP</span>
@@ -906,12 +897,13 @@
                       prescriptions from nearby pharmacies and get best deals
                       from the lowest price in pharmacies nearby.
                     </p>
-                    <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-between flex-wrap">
+                      <span>ElasticSearch</span>
+
                       <span>PHP</span>
                       <span>Symfony</span>
                       <span>Swift</span>
                       <span>Kotlin</span>
-                      <span>ElasticSearch</span>
                     </div>
                   </div>
                 </div>
@@ -926,7 +918,7 @@
                       from the lowest price in pharmacies nearby.
                     </p>
                   </div>
-                  <div class="d-flex justify-content-between p-3">
+                  <div class="d-flex justify-content-between p-3 flex-wrap">
                     <span>PHP</span>
                     <span>Symfony</span>
                     <span>Swift</span>
@@ -964,7 +956,7 @@
                       A place where you can shop for workstations and related
                       office items.
                     </p>
-                    <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-between flex-wrap">
                       <span>CSS</span>
                       <span>HTML</span>
                       <span>Twig</span>
@@ -983,7 +975,7 @@
                       office items.
                     </p>
                   </div>
-                  <div class="d-flex justify-content-between p-3">
+                  <div class="d-flex justify-content-between p-3 flex-wrap">
                     <span>CSS</span>
                     <span>HTML</span>
                     <span>Twig</span>
@@ -1022,7 +1014,7 @@
                       companies that offers them a whole database to track
                       drivers, cars, buses and route information and tracking.
                     </p>
-                    <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-between flex-wrap">
                       <span>PHP</span>
                       <span>Symfony</span>
                       <span>Twig</span>
@@ -1042,7 +1034,7 @@
                       drivers, cars, buses and route information and tracking.
                     </p>
                   </div>
-                  <div class="d-flex justify-content-between p-3">
+                  <div class="d-flex justify-content-between p-3 flex-wrap">
                     <span>PHP</span>
                     <span>Symfony</span>
                     <span>Twig</span>
@@ -1081,7 +1073,7 @@
                       lot of other sub products that we offer to Travellers from
                       all over the world.
                     </p>
-                    <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-between flex-wrap">
                       <span>AWS</span>
                       <span>EmberJs</span>
                       <span>MongoDB</span>
@@ -1100,7 +1092,7 @@
                       all over the world.
                     </p>
                   </div>
-                  <div class="d-flex justify-content-between p-3">
+                  <div class="d-flex justify-content-between p-3 flex-wrap">
                     <span>AWS</span>
                     <span>EmberJs</span>
                     <span>MongoDB</span>
@@ -1116,7 +1108,7 @@
             </div>
 
             <!-- More -->
-            <div class="more-projs px-md-5 px-3 mb-5">
+            <div class="more-projs px-lg-5 px-3 mb-5">
               <div class="section-header row">
                 <div class="col-md-4 col-lg-3 col-7">
                   <h4 class="py-4">Some Noteworthy Work</h4>
@@ -1148,7 +1140,7 @@
                         on the web baset Admin panel and creating the API for
                         the application
                       </p>
-                      <div class="d-flex-column justify-content-start">
+                      <div class="d-flex-column justify-content-start flex-wrap">
                         <span>NodeJs</span>
                         <span>Express</span>
                         <span>Google Maps API</span>
@@ -1177,7 +1169,7 @@
                         the subsections of the items that the company offers
                         with tracking and automated alerts.
                       </p>
-                      <div class="d-flex justify-content-start">
+                      <div class="d-flex justify-content-start flex-wrap">
                         <span>PHP</span>
                         <span>Symfony</span>
                         <span>Twig</span>
@@ -1205,7 +1197,7 @@
                         everything for the HR department for your company ex:
                         Payrolls, Vacations, Health Insurance etc..
                       </p>
-                      <div class="d-flex justify-content-start">
+                      <div class="d-flex justify-content-start flex-wrap">
                         <span>PHP</span>
                         <span>Laravel</span>
                         <span>Blade</span>
@@ -1258,7 +1250,7 @@
         </button>
       </div>
 
-      <div class="contact-info pb-4 "">
+      <div class="contact-info pb-4">
       <div class="social-links d-flex justify-content-center py-3 d-md-none">
         <div class="footer-left__link">
           <a href="https://github.com/hadress92" target="_blank">
