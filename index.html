@@ -1,21 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ahmed Talaat | Software Engineer & Technical PM</title>
 
-    <!-- Bootstrap CSS -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- Icons-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
 
     <!-- Favicon -->
@@ -30,1255 +25,833 @@
       src="https://kit.fontawesome.com/fd7fa2f891.js"
       crossorigin="anonymous"
     ></script>
-    <script type="module" src="./scripts/button.js"></script>
+
+    <!-- DevIcons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+
     <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
     />
 
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="./styles/styles.css" />
-
-    <style>
-      .copyrights a {
-        font-family: "Style Script", cursive;
-        color: var(--blue);
-        font-size: 1.5em;
-      }
-    </style>
-
-    <title>Ahmed's Portfolio</title>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark py-3">
-      <div class="container-fluid d-flex justify-content-between">
-        <div class="navbar-logo d-md-none">
-          <a class="navbar-brand navbar-border navbar-content__hidden" href="#"
-            >AT</a
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">AT</a>
+        <div class="nav-links" id="navLinks">
+          <a href="#about" class="nav-link" data-number="01.">About</a>
+          <a href="#services" class="nav-link" data-number="02.">What I Do</a>
+          <a href="#experience" class="nav-link" data-number="03."
+            >Experience</a
           >
+          <a href="#projects" class="nav-link" data-number="04.">Projects</a>
+          <a href="#contact" class="nav-link" data-number="05.">Contact</a>
+          <a href="./AT-SD-2023.pdf" download class="btn btn-outline">Resume</a>
         </div>
-
-        <!-- Offcanvas  Hidden MENU -->
-        <div class="offcanvas-menu ">
-          <button
-            class="btn navbar-content__hidden rotating-icon d-md-none"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"
-          >
-            <i class="bi bi-x-diamond fs-2 text-white"></i>
-          </button>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasRight"
-            aria-labelledby="offcanvasRightLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 id="offcanvasRightLabel"></h5>
-              <button
-                type="button"
-                class="btn text-reset"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              >
-                <i class="bi bi-x-diamond fs-2 text-white rotated-icon"></i>
-              </button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav text-center">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#about"
-                    >About</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#experience">Experience</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#work">Work</a>
-                </li>
-
-                <li>
-                  <a
-                    class="btn btn-green my-4"
-                    href="./AT-SD-2023.pdf"
-                    download
-                  >
-                    Resume</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- NAVBAR Collapsable -->
-        <div
-          class="collapse navbar-collapse d-flex justify-content-between align-items-baseline  d-none d-md-block"
-          id="navbarNav"
-        >
-          <a class="navbar-brand navbar-border" href="#">AT</a>
-
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#about"
-                >About</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#work">Work</a>
-            </li>
-          </ul>
-
-          <a class="btn btn-green" href="././AT-SD-2023.pdf" download>Resume</a>
-        </div>
-      </div>
-    </nav>
-    <div class="body-wrapper">
-      <div class="row">
-        <!-- Introduction Column -->
-        <div class="col-lg-7 align-items-center">
-          <!-- Introduction -->
-          <div class="intro px-4
-           px-5 pt-0">
-            <h6>Hi, my name is</h6>
-
-            <br />
-
-            <h2>Ahmed Talaat.</h2>
-            <h3 class="pb-2">I'm a Software Engineer.</h3>
-
-            <br />
-
-            <p>
-              As a software engineer, I don't just code; I craft the digital
-              engines that power tomorrow's innovations. My world revolves
-              around architecting dynamic backend structures that breathe life
-              into ideas. I'm currently immersed in the captivating world of
-              software engineering at
-              <a href="https://louvels.com/" target="_blank">Louvels</a>, where
-              I contribute to the development of innovative, tailor-made
-              products that adapt to any client's needs. With every project, I
-              aim to develop clever solutions that effectively address complex
-              challenges. Join me on a journey where each line of code
-              contributes to the creation of versatile, client-centric software
-              products that redefine possibilities.
-            </p>
-
-            <br />
-
-            <a
-              class="btn btn-green btn-lg mb-5"
-              href="https://calendly.com/atalaat-92/short-discussion?month=2022-02"
-              target="_blank"
-            >
-              Let's Meet!
-            </a>
-          </div>
-        </div>
-
-        <!-- About Image Column -->
-        <div class="col-lg-5 d-flex justify-content-center align-items-center">
-          <!-- About Image -->
-          <div class="about-img">
-            <div>
-              <img
-                src="./images/IMG_16.jpg"
-                alt="my-image"
-                width="300px"
-                height="300px"
-              />
-            </div>
-            <div class="about-img__border"></div>
-          </div>
-        </div>
-
-        <div class="about px-5 px-lg-5 row" id="about">
-          <div class="section-header row">
-            <div class="col-md-4 col-lg-3 col-5">
-              <h4 class="py-4">About Me</h4>
-            </div>
-            <div class="col-md-8 col-lg-9 col-7">
-              <hr />
-            </div>
-          </div>
-
-          <!-- About Paragraph -->
-          <div class="col-12 col-lg-12">
-            <p>
-              Hello, I have a passion for creating tailored dynamic web
-              applications, which has been a part of my journey since I first
-              studied programming at University in 2012. Over the years, I've
-              had the privilege of working at multiple software houses, gaining
-              exposure to a wide range of technologies and accumulating valuable
-              experience.
-            </p>
-            <br />
-
-            <p>
-              My primary focus these days is on building dynamic, accessible
-              products for various clients, and I also have experience in
-              managing pipelines and technical teams.
-            </p>
-
-            <br />
-            <p>Here are a few technologies I’ve been working with recently:</p>
-
-            <div class="iconed-list d-flex justify-content-center align-items-center">
-              <ul class="row">
-
-                <div class="col-lg-3 col-md-6 col-xs-12">
-                  <li><i class="devicon-php-plain colored"></i> PHP</li>
-                  <li>
-                    <i class="devicon-symfony-original-wordmark"></i> PHP
-                    (Symfony)
-                  </li>
-                  <li>
-                    <i class="devicon-laravel-plain colored"></i> PHP (Laravel)
-                  </li>
-                  <li><i class="devicon-wordpress-plain"></i> PHP Wordpress</li>
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12">
-                  <li>
-                    <i class="devicon-doctrine-plain colored"></i> Doctrine
-                  </li>
-                  <li><i class="devicon-git-plain colored"></i> Git</li>
-                  <li>
-                    <i class="devicon-javascript-plain colored"></i> JavaScript
-                    (ES6+)
-                  </li>
-                  <li>
-                    <i class="devicon-typescript-plain colored"></i> TypeScript
-                  </li>
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 ">
-                  <li><i class="devicon-nodejs-plain colored"></i> Node.js</li>
-                  <li><i class="devicon-express-original"></i> Express</li>
-                  <li><i class="devicon-mysql-plain"></i> MySQL</li>
-                  <li><i class="devicon-mongodb-plain colored"></i> MongoDB</li>
-                </div>
-                <div class="col-lg-3  col-md-6 col-xs-12 " >
-
-                  <li>
-                    <i class="devicon-react-original colored"></i> ReactJs
-                  </li>
-                  <li>
-                    <img
-                      src="./images/elasticsearch.230x256.png"
-                      class="icon-png"
-                      alt="Elasticsearch Logo"
-                    />
-                    Elasticsearch
-                  </li>
-                  <li><i class="devicon-jira-plain colored"></i> Jira</li>
-                  <li><i class="devicon-docker-plain colored"></i> Docker</li>
-                </div>
-              </ul>
-
-            </div>
-
-            <!-- Work -->
-            <div class="work px-3 px-lg-5" id="experience">
-              <div class="section-header row">
-                <div class="col-md-4 col-lg-3 col-7">
-                  <h4 class="py-4">Where I've Worked</h4>
-                </div>
-                <div class="col-md-8 col-lg-9 col-5">
-                  <hr />
-                </div>
-              </div>
-              <div>
-                <!-- Nav tabs -->
-                <div class="d-flex flex-md-row flex-column align-items-start">
-                  <div
-                    class="nav flex-md-column nav-pills me-3 mb-4 pe-md-3 nav-tabs"
-                    id="v-pills-tab"
-                    role="tablist"
-                    aria-orientation="vertical"
-                  >
-                    <button
-                      class="nav-link active"
-                      id="v-pills-settings-tab"
-                      data-bs-toggle="pill"
-                      data-bs-target="#v-pills-last"
-                      type="button"
-                      role="tab"
-                      aria-controls="v-pills-last"
-                      aria-selected="false"
-                    >
-                      Louvels
-                    </button>
-                    <button
-                      class="nav-link"
-                      id="v-pills-settings-tab"
-                      data-bs-toggle="pill"
-                      data-bs-target="#v-pills-settings"
-                      type="button"
-                      role="tab"
-                      aria-controls="v-pills-settings"
-                      aria-selected="false"
-                    >
-                      Riskline
-                    </button>
-                    <button
-                      class="nav-link"
-                      id="v-pills-messages-tab"
-                      data-bs-toggle="pill"
-                      data-bs-target="#v-pills-messages"
-                      type="button"
-                      role="tab"
-                      aria-controls="v-pills-messages"
-                      aria-selected="false"
-                    >
-                      Creiden
-                    </button>
-
-                    <button
-                      class="nav-link"
-                      id="v-pills-profile-tab"
-                      data-bs-toggle="pill"
-                      data-bs-target="#v-pills-profile"
-                      type="button"
-                      role="tab"
-                      aria-controls="v-pills-profile"
-                      aria-selected="false"
-                    >
-                      Objects
-                    </button>
-                    <button
-                      class="nav-link"
-                      id="v-pills-home-tab"
-                      data-bs-toggle="pill"
-                      data-bs-target="#v-pills-home"
-                      type="button"
-                      role="tab"
-                      aria-controls="v-pills-home"
-                      aria-selected="true"
-                    >
-                      Business Boomers
-                    </button>
-                  </div>
-                  <div class="tab-content" id="v-pills-tabContent">
-                    <div
-                      class="tab-pane fade"
-                      id="v-pills-home"
-                      role="tabpanel"
-                      aria-labelledby="v-pills-home-tab"
-                    >
-                      <div class="work-title">
-                        <h5 class="pe-2">Backend Developer</h5>
-                        <h6>@ Business Boomers</h6>
-                      </div>
-                      <div class="work-date">
-                        <i>July 2017 - June 2018 </i>
-
-                        <ul class="iconed-list">
-                          <li>
-                            Write good, performant, maintainable code for
-                            E-commerce websites serving our Clients
-                          </li>
-                          <li>
-                            Work with a variety of different languages,
-                            frameworks, and E-commerce based frameworks such as
-                            Sylius (Symfony E-commerce Framework) and using a
-                            variety of other techs alongside.
-                          </li>
-                          <li>
-                            Communicate with multi-disciplinary teams of
-                            engineers, designers, producers, and clients on a
-                            daily basis
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div
-                      class="tab-pane fade"
-                      id="v-pills-profile"
-                      role="tabpanel"
-                      aria-labelledby="v-pills-profile-tab"
-                    >
-                      <div class="work-title">
-                        <h5 class="pe-2">Backend Developer</h5>
-                        <h6>@ Objects</h6>
-                      </div>
-                      <div class="work-date">
-                        <i>June 2018 - September 2019</i>
-
-                        <ul class="iconed-list">
-                          <li>
-                            Worked on various backend projects using ample
-                            languages including PHP and Node.js while assisting
-                            my team in developing mobile and web applications.
-                          </li>
-                          <li>
-                            Created restful APIs, communicated with other third
-                            party apps and integrated with different APIs such
-                            as Google maps, Facebook, Twitter, Linkedin APIs.
-                          </li>
-                          <li>
-                            Cooperated with my team of engineers reporting to
-                            our team lead.
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div
-                      class="tab-pane fade"
-                      id="v-pills-messages"
-                      role="tabpanel"
-                      aria-labelledby="v-pills-messages-tab"
-                    >
-                      <div class="work-title">
-                        <h5 class="pe-2">Senior Backend Developer</h5>
-                        <h6>@ Creiden</h6>
-                      </div>
-                      <div class="work-date">
-                        <i>September 2019 - August 2020</i>
-
-                        <ul class="iconed-list">
-                          <li>
-                            Write Scalable, high performant, maintainable code
-                            for a diverse array of client and internal projects.
-                          </li>
-                          <li>
-                            Worked on big scale projects and made sure to
-                            maintain code quality using code standards and OOP.
-                          </li>
-                          <li>
-                            Led the team of three developers, mentored them and
-                            supported them.
-                          </li>
-                          <li>Managed code review and pull requests.</li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div
-                      class="tab-pane fade"
-                      id="v-pills-settings"
-                      role="tabpanel"
-                      aria-labelledby="v-pills-settings-tab"
-                    >
-                      <div class="work-title">
-                        <h5 class="pe-2">Project Manager - Team Lead</h5>
-                        <h6>@ Riskline</h6>
-                      </div>
-                      <div class="work-date">
-                        <i>August 2020 - November 2022 </i>
-
-                        <ul class="iconed-list">
-                          <li>
-                            Maintain development life cycle and hold daily
-                            scrums. Create and maintain tasks on Clickup. Make
-                            sure we stick to our sprint timelines.
-                          </li>
-                          <li>
-                            Work closely with Clients to understand product
-                            requirements and features. Assess edge cases and
-                            create detailed requirements. Make sure we deliver
-                            products on time and ensure quality.
-                          </li>
-                          <li>
-                            Help our developers if needed and Mentor them.
-                            Perform code review and research new technologies to
-                            enhance already existing ones being used.
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div
-                      class="tab-pane fade show active"
-                      id="v-pills-last"
-                      role="tabpanel"
-                      aria-labelledby="v-pills-last-tab"
-                    >
-                      <div class="work-title">
-                        <h5 class="pe-2">Senior Software Engineer</h5>
-                        <h6>@ Louvels</h6>
-                      </div>
-                      <div class="work-date">
-                        <i>August 2020 - Present </i>
-
-                        <ul class="iconed-list">
-                          <li>
-                            <strong
-                              >Collaboration and Project Management:</strong
-                            >
-                            Collaborate with the development team to ensure the
-                            successful execution of the software development
-                            lifecycle. Conduct regular code reviews and offer
-                            guidance and mentorship to junior developers.
-                          </li>
-                          <li>
-                            <strong
-                              >Client Engagement and Product
-                              Development:</strong
-                            >
-                            Engage in close communication with clients to gain a
-                            deep understanding of product requirements and
-                            features. Analyze and address edge cases while
-                            crafting comprehensive technical specifications.
-                            Prioritize on-time delivery and maintain a
-                            commitment to delivering high-quality software
-                            solutions.
-                          </li>
-                          <li>
-                            <strong>Technical Expertise and Innovation:</strong>
-                            Continuously research and evaluate emerging
-                            technologies, seeking opportunities to enhance and
-                            optimize the existing tech stack. Contribute to the
-                            team's knowledge base and identify areas for
-                            improvement in the development process.
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Projects -->
-
-            <div class="projects px-lg-5" id="work">
-              <div class="section-header row">
-                <div class="col-md-4 col-lg-3 col-7">
-                  <h4 class="py-4">Some Projects I've Built</h4>
-                </div>
-                <div class="col-md-8 col-lg-9 col-5">
-                  <hr />
-                </div>
-              </div>
-
-              <div class="project-card d-flex m-auto align-items-center">
-                <div class="card bg-dark text-white col-12 col-lg-8">
-                  <img
-                    src="./images/project-7.png"
-                    class="card-img"
-                    alt="..."
-                  />
-                  <div class="card-img-overlay d-lg-none">
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <h6>Featured Project</h6>
-                      <div class="d-flex justify-content-end project-link py-2">
-                        <a href="https://my.ideaalnet.org/" target="_blank">
-                          <i class="fas fa-external-link-alt"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <h2>Ideaalnet</h2>
-                    <p class="text-center">
-                      A web platform unifying NL schools, students, parents, and
-                      suppliers to facilitate the distribution of educational
-                      devices. It features role-specific dashboards, each with
-                      tailored views and integrated location maps for efficient
-                      collaboration. Built using my favorite code editor
-                      <a
-                        href="https://www.jetbrains.com/phpstorm/"
-                        target="_blank"
-                        >PHP STORM</a
-                      >
-                    </p>
-                    <div class="d-flex justify-content-between">
-                      <span>PHP</span>
-                      <span>Symfony</span>
-                      <span>React</span>
-                      <span>MySql</span>
-                      <span>Elasticsearch</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-7 project-desc__wrap">
-                  <h6>Featured Project</h6>
-                  <h2>Ideaalnet</h2>
-                  <div class="project-desc">
-                    <p class="text-center">
-                      A web platform unifying NL schools, students, parents, and
-                      suppliers to facilitate the distribution of educational
-                      devices. It features role-specific dashboards, each with
-                      tailored views and integrated location maps for efficient
-                      collaboration. Built using my favorite code editor
-                      <a
-                        href="https://www.jetbrains.com/phpstorm/"
-                        target="_blank"
-                        >PHP STORM</a
-                      >
-                    </p>
-                  </div>
-                  <div class="d-flex justify-content-between p-3">
-                    <span>PHP</span>
-                    <span>Symfony</span>
-                    <span>React</span>
-                    <span>MySql</span>
-                    <span>Elasticsearch</span>
-                  </div>
-                  <div class="d-flex justify-content-end project-link px-2">
-                    <a href="https://my.ideaalnet.org/" target="_blank">
-                      <i class="fas fa-external-link-alt"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project-card d-flex m-auto align-items-center">
-                <div class="card bg-dark text-white col-12 col-lg-8">
-                  <img
-                    src="./images/project-8.png"
-                    class="card-img"
-                    alt="..."
-                  />
-                  <div class="card-img-overlay d-lg-none">
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <h6>Featured Project</h6>
-                      <div class="d-flex justify-content-end project-link py-2">
-                        <a href="https://kraakman.com/" target="_blank">
-                          <i class="fas fa-external-link-alt"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <h2>Kraakman</h2>
-                    <p class="text-center">
-A vast online marketplace for trucks, tractors, and heavy machinery in the Netherlands and nearby regions. It caters to both individual buyers and large-scale dealers, offering a wide range of new and used machinery, along with flexible purchasing, exchange, and installment options
-                    </p>
-                    <div class="d-flex justify-content-between">
-                      <span>PHP</span>
-                      <span>Symfony</span>
-                      <span>React</span>
-                      <span>MySql</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-7 project-desc__wrap">
-                  <h6>Featured Project</h6>
-                  <h2>Kraakman</h2>
-                  <div class="project-desc">
-                    <p class="text-center">
-                      A vast online marketplace for trucks, tractors, and heavy
-                      machinery, catering to the Netherlands and neighboring
-                      countries. We serve as a one-stop platform for both
-                      individual buyers and large-scale dealers, offering an
-                      extensive selection of new and used machinery. The
-                      platform provides flexible options for purchases,
-                      exchanges, and installment payments.
-                    </p>
-                  </div>
-                  <div class="d-flex justify-content-between p-3">
-                    <span>Elasticsearch</span>
-                    <span>React</span>
-                    <span>MySql</span>
-                    <span>Symfony</span>
-                    <span>PHP</span>
-                  </div>
-                  <div class="d-flex justify-content-end project-link px-2">
-                    <a href="https://kraakman.com/" target="_blank">
-                      <i class="fas fa-external-link-alt"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project-card d-flex m-auto align-items-center">
-                <div class="card bg-dark text-white col-12 col-lg-8">
-                  <img
-                    src="./images/project-9.png"
-                    class="card-img"
-                    alt="..."
-                  />
-                  <div class="card-img-overlay d-lg-none">
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <h6>Featured Project</h6>
-                      <div class="d-flex justify-content-end project-link py-2">
-                        <a href="https://csi-fresh.com/en/" target="_blank">
-                          <i class="fas fa-external-link-alt"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <h2>CSI Fresh</h2>
-                    <p class="text-center">
-                      A leading logistics hub overseeing all transportation modes, handling thousands of daily shipments in the Netherlands. The platform efficiently coordinates with large-scale vendors for a seamless and reliable logistics experience.
-                    </p>
-                    <div class="d-flex justify-content-between">
-                      <span>PHP</span>
-                      <span>Symfony</span>
-                      <span>React</span>
-                      <span>MySql</span>
-                      <span>Third Party Apis</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-7 project-desc__wrap">
-                  <h6>Featured Project</h6>
-                  <h2>CSI Fresh</h2>
-                  <div class="project-desc">
-                    <p class="text-center">
-                      A major logistics powerhouse managing comprehensive
-                      inbound and outbound logistics operations for the
-                      Netherlands. overseeing all modes of transportation,
-                      including land, sea, and air, while seamlessly
-                      orchestrating thousands of daily shipments. The platform
-                      efficiently coordinates these shipments with a vast
-                      network of large-scale vendors, ensuring a smooth and
-                      reliable logistics experience.
-                    </p>
-                  </div>
-                  <div class="d-flex justify-content-between p-3">
-                    <span>PHP</span>
-                    <span>Symfony</span>
-                    <span>MySql</span>
-                    <span>React</span>
-                    <span>Third Party Apis</span>
-                  </div>
-                  <div class="d-flex justify-content-end project-link px-2">
-                    <a href="https://csi-fresh.com/en/" target="_blank">
-                      <i class="fas fa-external-link-alt"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project-card d-flex m-auto align-items-center">
-                <div class="card bg-dark text-white col-12 col-lg-8">
-                  <img
-                    src="./images/project-1.jpeg"
-                    class="card-img"
-                    alt="..."
-                  />
-                  <div class="card-img-overlay d-lg-none">
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <h6>Featured Project</h6>
-                      <div class="d-flex justify-content-end project-link py-2">
-                        <a href="https://zvendo.com/" target="_blank">
-                          <i class="fas fa-external-link-alt"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <h2>Zvendo E-commerce</h2>
-                    <p class="text-center">
-                      A multivendor website where you can create your own store
-                      without going through the hassle of doing any coding using
-                      an interface builder. Using my favorite code editor
-                      <a
-                        href="https://www.jetbrains.com/phpstorm/"
-                        target="_blank"
-                        >PHP STORM</a
-                      >
-                    </p>
-                    <div class="d-flex justify-content-between">
-                      <span>PHP</span>
-                      <span>Sylius</span>
-                      <span>Symfony</span>
-                      <span>Twig</span>
-                      <span>MySql</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-7 project-desc__wrap">
-                  <h6>Featured Project</h6>
-                  <h2>Zvendo E-commerce</h2>
-                  <div class="project-desc">
-                    <p class="text-center">
-                      A multivendor website where you can create your own store
-                      without going through the hassle of doing any coding using
-                      an interface builder
-                    </p>
-                  </div>
-                  <div class="d-flex justify-content-between p-3">
-                    <span>PHP</span>
-                    <span>Sylius</span>
-                    <span>Symfony</span>
-                    <span>Twig</span>
-                    <span>MySql</span>
-                  </div>
-                  <div class="d-flex justify-content-end project-link px-2">
-                    <a href="https://zvendo.com/" target="_blank">
-                      <i class="fas fa-external-link-alt"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project-card d-flex m-auto align-items-center">
-                <div class="card bg-dark text-white col-12 col-lg-8">
-                  <img
-                    src="./images/project-2.jpeg"
-                    class="card-img"
-                    alt="..."
-                  />
-                  <div class="card-img-overlay d-lg-none">
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <h6>Featured Project</h6>
-                      <div class="d-flex justify-content-end project-link py-2">
-                        <a href="https://stacksmarket.co/" target="_blank">
-                          <i class="fas fa-external-link-alt"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <h2>Stacks</h2>
-                    <p class="">
-                      Another Multivendor store where you can create your store
-                      and your mobile app using preset themes and web interface.
-                    </p>
-                    <div class="d-flex justify-content-between">
-                      <span>Angular</span>
-                      <span>MySql</span>
-                      <span>Wordpress</span>
-                      <span>PHP</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-7 project-desc__wrap">
-                  <h6>Featured Project</h6>
-                  <h2>Stacks</h2>
-                  <div class="project-desc">
-                    <p class="">
-                      Another Multivendor store where you can create your store
-                      and your mobile app using preset themes and web interface.
-                    </p>
-                  </div>
-                  <div class="d-flex justify-content-between p-3">
-                    <span>Angular</span>
-                    <span>MySql</span>
-                    <span>Wordpress</span>
-                    <span>PHP</span>
-                  </div>
-                  <div class="d-flex justify-content-end project-link px-2">
-                    <a href="https://stacksmarket.co/" target="_blank">
-                      <i class="fas fa-external-link-alt"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project-card d-flex m-auto align-items-center">
-                <div class="card bg-dark text-white col-12 col-lg-8">
-                  <img
-                    src="./images/project-3.jpeg"
-                    class="card-img"
-                    alt="..."
-                  />
-                  <div class="card-img-overlay d-lg-none">
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <h6>Featured Project</h6>
-                      <div class="d-flex justify-content-end project-link py-2">
-                        <a href="https://belshifa.com/" target="_blank">
-                          <i class="fas fa-external-link-alt"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <h2>Belshifa Mobile App</h2>
-                    <p class="">
-                      A pharmacy mobile application where you can request your
-                      prescriptions from nearby pharmacies and get best deals
-                      from the lowest price in pharmacies nearby.
-                    </p>
-                    <div class="d-flex justify-content-between flex-wrap">
-                      <span>ElasticSearch</span>
-
-                      <span>PHP</span>
-                      <span>Symfony</span>
-                      <span>Swift</span>
-                      <span>Kotlin</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-7 project-desc__wrap">
-                  <h6>Featured Project</h6>
-                  <h2>Belshifa Mobile App</h2>
-                  <div class="project-desc">
-                    <p class="">
-                      A pharmacy mobile application where you can request your
-                      prescriptions from nearby pharmacies and get best deals
-                      from the lowest price in pharmacies nearby.
-                    </p>
-                  </div>
-                  <div class="d-flex justify-content-between p-3 flex-wrap">
-                    <span>PHP</span>
-                    <span>Symfony</span>
-                    <span>Swift</span>
-                    <span>Kotlin</span>
-                    <span>ElasticSearch</span>
-                  </div>
-                  <div class="d-flex justify-content-end project-link px-2">
-                    <a href="https://belshifa.com/" target="_blank">
-                      <i class="fas fa-external-link-alt"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project-card d-flex m-auto align-items-center">
-                <div class="card bg-dark text-white col-12 col-lg-8">
-                  <img
-                    src="./images/project-4.jpeg"
-                    class="card-img"
-                    alt="..."
-                  />
-                  <div class="card-img-overlay d-lg-none">
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <h6>Featured Project</h6>
-                      <div class="d-flex justify-content-end project-link py-2">
-                        <a href="https://www.evoline.com/" target="_blank">
-                          <i class="fas fa-external-link-alt"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <h2>Evoline</h2>
-                    <p class="">
-                      A place where you can shop for workstations and related
-                      office items.
-                    </p>
-                    <div class="d-flex justify-content-between flex-wrap">
-                      <span>CSS</span>
-                      <span>HTML</span>
-                      <span>Twig</span>
-                      <span>Symfony</span>
-                      <span>PHP</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-7 project-desc__wrap">
-                  <h6>Featured Project</h6>
-                  <h2>Evoline</h2>
-                  <div class="project-desc">
-                    <p class="">
-                      A place where you can shop for workstations and related
-                      office items.
-                    </p>
-                  </div>
-                  <div class="d-flex justify-content-between p-3 flex-wrap">
-                    <span>CSS</span>
-                    <span>HTML</span>
-                    <span>Twig</span>
-                    <span>Symfony</span>
-                    <span>PHP</span>
-                  </div>
-                  <div class="d-flex justify-content-end project-link px-2">
-                    <a href="https://www.evoline.com/" target="_blank">
-                      <i class="fas fa-external-link-alt"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project-card d-flex m-auto align-items-center">
-                <div class="card bg-dark text-white col-12 col-lg-8">
-                  <img
-                    src="./images/project-5.jpeg"
-                    class="card-img"
-                    alt="..."
-                  />
-                  <div class="card-img-overlay d-lg-none">
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <h6>Featured Project</h6>
-                      <div class="d-flex justify-content-end project-link py-2">
-                        <a href="https://land-fleet.com/" target="_blank">
-                          <i class="fas fa-external-link-alt"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <h2>Land Fleet</h2>
-                    <p class="">
-                      A transportation web app that works with pertoleum
-                      companies that offers them a whole database to track
-                      drivers, cars, buses and route information and tracking.
-                    </p>
-                    <div class="d-flex justify-content-between flex-wrap">
-                      <span>PHP</span>
-                      <span>Symfony</span>
-                      <span>Twig</span>
-                      <span>HTML</span>
-                      <span>CSS</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-7 project-desc__wrap">
-                  <h6>Featured Project</h6>
-                  <h2>Land Fleet</h2>
-                  <div class="project-desc">
-                    <p class="">
-                      A transportation web app that works with pertoleum
-                      companies that offers them a whole database to track
-                      drivers, cars, buses and route information and tracking.
-                    </p>
-                  </div>
-                  <div class="d-flex justify-content-between p-3 flex-wrap">
-                    <span>PHP</span>
-                    <span>Symfony</span>
-                    <span>Twig</span>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                  </div>
-                  <div class="d-flex justify-content-end project-link px-2">
-                    <a href="https://land-fleet.com/" target="_blank">
-                      <i class="fas fa-external-link-alt"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project-card d-flex m-auto align-items-center">
-                <div class="card bg-dark text-white col-12 col-lg-8">
-                  <img
-                    src="./images/project-6.jpeg"
-                    class="card-img"
-                    alt="..."
-                  />
-                  <div class="card-img-overlay d-lg-none">
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <h6>Featured Project</h6>
-                      <div class="d-flex justify-content-end project-link py-2">
-                        <a href="https://www.riskline.com" target="_blank">
-                          <i class="fas fa-external-link-alt"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <h2>Riskline</h2>
-                    <p class="">
-                      A travel risk management products website that includes a
-                      lot of other sub products that we offer to Travellers from
-                      all over the world.
-                    </p>
-                    <div class="d-flex justify-content-between flex-wrap">
-                      <span>AWS</span>
-                      <span>EmberJs</span>
-                      <span>MongoDB</span>
-                      <span>Ruby on Rails</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-7 project-desc__wrap">
-                  <h6>Featured Project</h6>
-                  <h2>Riskline</h2>
-                  <div class="project-desc">
-                    <p class="">
-                      A travel risk management products website that includes a
-                      lot of other sub products that we offer to Travellers from
-                      all over the world.
-                    </p>
-                  </div>
-                  <div class="d-flex justify-content-between p-3 flex-wrap">
-                    <span>AWS</span>
-                    <span>EmberJs</span>
-                    <span>MongoDB</span>
-                    <span>Ruby on Rails</span>
-                  </div>
-                  <div class="d-flex justify-content-end project-link px-2">
-                    <a href="https://www.riskline.com" target="_blank">
-                      <i class="fas fa-external-link-alt"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- More -->
-            <div class="more-projs px-lg-5 px-3 mb-5">
-              <div class="section-header row">
-                <div class="col-md-4 col-lg-3 col-7">
-                  <h4 class="py-4">Some Noteworthy Work</h4>
-                </div>
-                <div class="col-md-8 col-lg-9 col-5">
-                  <hr />
-                </div>
-              </div>
-              <div
-                class="row row-cols-1 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"
-              >
-                <div class="col">
-                  <div class="card h-100">
-                    <div
-                      class="card-head d-flex justify-content-between align-items-center"
-                    >
-                      <div class="folder-link">
-                        <a href=""><i class="far fa-folder"></i></a>
-                      </div>
-                      <div
-                        class="d-flex justify-content-end project-link"
-                      ></div>
-                    </div>
-                    <div class="card-body">
-                      <h5>24/7 Mobile App</h5>
-                      <p>
-                        A Saudi Arabian mobile application similar to Uber eats
-                        where you can pick up anything from anywhere. I worked
-                        on the web baset Admin panel and creating the API for
-                        the application
-                      </p>
-                      <div class="d-flex-column justify-content-start flex-wrap">
-                        <span>NodeJs</span>
-                        <span>Express</span>
-                        <span>Google Maps API</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="card h-100">
-                    <div
-                      class="card-head d-flex justify-content-between align-items-center"
-                    >
-                      <div class="folder-link">
-                        <a href=""><i class="far fa-folder"></i></a>
-                      </div>
-                      <div
-                        class="d-flex justify-content-end project-link"
-                      ></div>
-                    </div>
-                    <div class="card-body">
-                      <h5>Groupo5</h5>
-                      <p>
-                        A spanish internal company storage handling website,
-                        where they have a full overview of the storage of all
-                        the subsections of the items that the company offers
-                        with tracking and automated alerts.
-                      </p>
-                      <div class="d-flex justify-content-start flex-wrap">
-                        <span>PHP</span>
-                        <span>Symfony</span>
-                        <span>Twig</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="card h-100">
-                    <div
-                      class="card-head d-flex justify-content-between align-items-center"
-                    >
-                      <div class="folder-link">
-                        <a href=""><i class="far fa-folder"></i></a>
-                      </div>
-                      <div
-                        class="d-flex justify-content-end project-link"
-                      ></div>
-                    </div>
-                    <div class="card-body">
-                      <h5>Care Project</h5>
-                      <p>
-                        A Canadian internal HR platform where you can manage
-                        everything for the HR department for your company ex:
-                        Payrolls, Vacations, Health Insurance etc..
-                      </p>
-                      <div class="d-flex justify-content-start flex-wrap">
-                        <span>PHP</span>
-                        <span>Laravel</span>
-                        <span>Blade</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end body -->
-      <!-- Footer -->
-      <footer>
-        <div class="footer-left">
-          <div class="footer-left__link">
-            <a href="https://github.com/hadress92" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-          <div class="footer-left__link">
-            <a href="https://twitter.com/A_M_Talaat" target="_blank">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </div>
-          <div class="footer-left__link">
-            <a href="https://www.linkedin.com/in/atalaat92/" target="_blank">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </div>
-          <div class="footer-left__link">
-            <a href="Tel:00201020181885"> <i class="fas fa-phone"></i> </a>
-          </div>
-          <div class="footer-left__link line"></div>
-        </div>
-
-        <div class="footer-right">
-          <div class="footer-right__link">
-            <a href="">@atalaat.92@gmail.com</a>
-
-            <div class="footer-right__link line"></div>
-          </div>
-        </div>
-      </footer>
-
-      <div class="button-up">
-        <button onclick="topFunction()" id="myBtn" title="Go to top">
-          <i class="fas fa-chevron-up"></i>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
       </div>
+    </nav>
 
-      <div class="contact-info pb-4">
-      <div class="social-links d-flex justify-content-center py-3 d-md-none">
-        <div class="footer-left__link">
-          <a href="https://github.com/hadress92" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-        <div class="footer-left__link">
-          <a href="https://twitter.com/A_M_Talaat" target="_blank">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </div>
-        <div class="footer-left__link">
-          <a href="https://www.linkedin.com/in/ahmedtalaat92" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </div>
-        <div class="footer-left__link">
-          <a href="Tel:00201020181885"> <i class="fas fa-phone"></i> </a>
-        </div>
-        <div class="footer-left__link line"></div>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-links">
+        <a href="#about" data-number="01.">About</a>
+        <a href="#services" data-number="02.">What I Do</a>
+        <a href="#experience" data-number="03.">Experience</a>
+        <a href="#projects" data-number="04.">Projects</a>
+        <a href="#contact" data-number="05.">Contact</a>
+        <a href="./AT-SD-2023.pdf" download class="btn btn-outline">Resume</a>
       </div>
     </div>
-    <!-- Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script type="module" src="./scripts/script.js"></script>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <p class="hero-greeting animate-in">Hi, my name is</p>
+        <h1 class="hero-name animate-in" style="animation-delay: 0.1s">
+          Ahmed Talaat.
+        </h1>
+        <h2 class="hero-tagline animate-in" style="animation-delay: 0.2s">
+          I build things & lead teams that ship.
+        </h2>
+        <p class="hero-description animate-in" style="animation-delay: 0.3s">
+          I'm a <strong>Senior Software Engineer</strong> and
+          <strong>Technical Project Manager</strong>
+          who bridges the gap between code and delivery. I architect scalable
+          backend systems, lead cross-functional teams, and ensure products ship
+          on time with quality. Currently driving engineering and product
+          delivery at
+          <a href="https://louvels.com/" target="_blank" rel="noopener"
+            >Louvels</a
+          >.
+        </p>
+        <div class="hero-cta animate-in" style="animation-delay: 0.4s">
+          <a
+            class="btn btn-primary"
+            href="https://calendly.com/atalaat-92/short-discussion?month=2022-02"
+            target="_blank"
+            rel="noopener"
+          >
+            Let's Talk
+          </a>
+          <a class="btn btn-outline" href="#projects">View My Work</a>
+        </div>
+      </div>
+      <div class="hero-image animate-in" style="animation-delay: 0.5s">
+        <div class="hero-image-wrapper">
+          <img src="./images/profile-v2.jpg" alt="Ahmed Talaat" />
+          <div class="hero-image-border"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about" id="about">
+      <div class="section-container">
+        <h2 class="section-title reveal">
+          <span class="section-number">01.</span> About Me
+        </h2>
+        <div class="about-content">
+          <div class="about-text reveal">
+            <p>
+              I'm a software engineer and technical leader with
+              <strong>9+ years</strong> of experience building and shipping
+              digital products. My journey started writing PHP at a Cairo
+              software house in 2017, and has since evolved into a career that
+              spans backend architecture, team leadership, and end-to-end
+              project delivery.
+            </p>
+            <p>
+              What sets me apart is my ability to operate at the intersection of
+              <strong>engineering and project management</strong>. I've led
+              Agile teams, managed client relationships, owned technical
+              roadmaps, and still love getting into the code. Whether I'm
+              architecting a logistics platform handling thousands of daily
+              shipments or running sprint ceremonies with a distributed team, I
+              bring the same rigor and attention to detail.
+            </p>
+            <p>
+              At
+              <a href="https://louvels.com/" target="_blank" rel="noopener"
+                >Louvels</a
+              >, I lead the development of bespoke software products for clients
+              across the Netherlands and Europe, combining hands-on engineering
+              with strategic project oversight.
+            </p>
+          </div>
+          <div class="about-skills reveal" style="animation-delay: 0.1s">
+            <h3>Technologies I Work With</h3>
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h4>Backend</h4>
+                <ul>
+                  <li>PHP (Symfony, Laravel)</li>
+                  <li>Node.js / Express</li>
+                  <li>Ruby on Rails</li>
+                  <li>REST API Design</li>
+                </ul>
+              </div>
+              <div class="skill-category">
+                <h4>Frontend</h4>
+                <ul>
+                  <li>React / TypeScript</li>
+                  <li>Angular</li>
+                  <li>JavaScript (ES6+)</li>
+                  <li>HTML / CSS / SCSS</li>
+                </ul>
+              </div>
+              <div class="skill-category">
+                <h4>Data & DevOps</h4>
+                <ul>
+                  <li>MySQL / MongoDB</li>
+                  <li>Elasticsearch</li>
+                  <li>Docker</li>
+                  <li>AWS</li>
+                </ul>
+              </div>
+              <div class="skill-category">
+                <h4>PM & Leadership</h4>
+                <ul>
+                  <li>Agile / Scrum</li>
+                  <li>Jira / ClickUp</li>
+                  <li>Stakeholder Management</li>
+                  <li>Technical Roadmapping</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHAT I DO ===== -->
+    <section class="section services" id="services">
+      <div class="section-container">
+        <h2 class="section-title reveal">
+          <span class="section-number">02.</span> What I Do
+        </h2>
+        <div class="services-grid">
+          <!-- Engineering Card -->
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Software Engineering</h3>
+            <p>
+              I design and build robust, scalable backend systems that power
+              complex digital products. From database architecture to API design
+              to microservices, I write clean, maintainable code that stands the
+              test of scale and time.
+            </p>
+            <ul class="service-highlights">
+              <li>Backend Architecture & API Design</li>
+              <li>Database Modeling & Optimization</li>
+              <li>System Integration & Third-Party APIs</li>
+              <li>Code Review & Technical Mentorship</li>
+              <li>Performance Optimization</li>
+            </ul>
+          </div>
+
+          <!-- Technical PM Card -->
+          <div class="service-card reveal" style="animation-delay: 0.15s">
+            <div class="service-icon">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <h3>Technical Project Management</h3>
+            <p>
+              I lead engineering teams and manage the full software development
+              lifecycle. My technical background means I can translate business
+              requirements into actionable specs, estimate with accuracy, and
+              unblock teams when things get technically complex.
+            </p>
+            <ul class="service-highlights">
+              <li>Agile/Scrum Ceremonies & Sprint Planning</li>
+              <li>Requirements Analysis & Technical Specs</li>
+              <li>Stakeholder Communication & Reporting</li>
+              <li>Risk Assessment & Mitigation</li>
+              <li>Team Mentorship & Growth</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="section experience" id="experience">
+      <div class="section-container">
+        <h2 class="section-title reveal">
+          <span class="section-number">03.</span> Where I've Worked
+        </h2>
+        <div class="timeline">
+          <!-- Louvels -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Senior Software Engineer</h3>
+                  <h4>
+                    <a
+                      href="https://louvels.com/"
+                      target="_blank"
+                      rel="noopener"
+                      >@ Louvels</a
+                    >
+                  </h4>
+                </div>
+                <span class="timeline-date">Aug 2020 &mdash; Present</span>
+              </div>
+              <div class="timeline-tags">
+                <span class="tag tag-engineering">Engineering</span>
+                <span class="tag tag-pm">Project Management</span>
+              </div>
+              <ul>
+                <li>
+                  Lead the software development lifecycle for bespoke client
+                  products, from requirements gathering through deployment and
+                  iteration.
+                </li>
+                <li>
+                  Conduct code reviews, mentor junior developers, and establish
+                  engineering best practices across the team.
+                </li>
+                <li>
+                  Engage directly with clients to translate business needs into
+                  detailed technical specifications and delivery timelines.
+                </li>
+                <li>
+                  Research and evaluate emerging technologies to continuously
+                  improve the team's tech stack and delivery velocity.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Riskline -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Project Manager & Team Lead</h3>
+                  <h4>
+                    <a
+                      href="https://www.riskline.com"
+                      target="_blank"
+                      rel="noopener"
+                      >@ Riskline</a
+                    >
+                  </h4>
+                </div>
+                <span class="timeline-date">Aug 2020 &mdash; Nov 2022</span>
+              </div>
+              <div class="timeline-tags">
+                <span class="tag tag-pm">Project Management</span>
+                <span class="tag tag-engineering">Technical Leadership</span>
+              </div>
+              <ul>
+                <li>
+                  Managed the full development lifecycle: ran daily scrums,
+                  maintained sprint boards on ClickUp, and ensured on-time
+                  delivery against sprint commitments.
+                </li>
+                <li>
+                  Worked closely with clients to gather and refine product
+                  requirements, assess edge cases, and produce comprehensive
+                  technical documentation.
+                </li>
+                <li>
+                  Mentored developers, performed code reviews, and researched
+                  new technologies to enhance the existing platform built on
+                  Ruby on Rails, EmberJS, and AWS.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Creiden -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Senior Backend Developer</h3>
+                  <h4>@ Creiden</h4>
+                </div>
+                <span class="timeline-date">Sep 2019 &mdash; Aug 2020</span>
+              </div>
+              <div class="timeline-tags">
+                <span class="tag tag-engineering">Engineering</span>
+              </div>
+              <ul>
+                <li>
+                  Developed scalable, high-performance backend systems for
+                  diverse client and internal projects using PHP/Symfony.
+                </li>
+                <li>
+                  Led a team of three developers, providing mentorship, code
+                  reviews, and technical guidance on architecture decisions.
+                </li>
+                <li>
+                  Enforced code quality standards and OOP best practices across
+                  large-scale projects.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Objects -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Backend Developer</h3>
+                  <h4>@ Objects</h4>
+                </div>
+                <span class="timeline-date">Jun 2018 &mdash; Sep 2019</span>
+              </div>
+              <div class="timeline-tags">
+                <span class="tag tag-engineering">Engineering</span>
+              </div>
+              <ul>
+                <li>
+                  Built backend services in PHP and Node.js, creating RESTful
+                  APIs and integrating with Google Maps, Facebook, Twitter, and
+                  LinkedIn APIs.
+                </li>
+                <li>
+                  Collaborated with cross-functional teams to deliver mobile and
+                  web applications for diverse client portfolios.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Business Boomers -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Backend Developer</h3>
+                  <h4>@ Business Boomers</h4>
+                </div>
+                <span class="timeline-date">Jul 2017 &mdash; Jun 2018</span>
+              </div>
+              <div class="timeline-tags">
+                <span class="tag tag-engineering">Engineering</span>
+              </div>
+              <ul>
+                <li>
+                  Developed e-commerce platforms using Symfony and Sylius
+                  framework, writing performant, maintainable code for
+                  client-facing products.
+                </li>
+                <li>
+                  Worked across multi-disciplinary teams of engineers,
+                  designers, and producers to deliver on tight timelines.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section projects" id="projects">
+      <div class="section-container">
+        <h2 class="section-title reveal">
+          <span class="section-number">04.</span> Projects I've Built
+        </h2>
+
+        <!-- Featured Projects -->
+        <div class="featured-projects">
+          <!-- Ideaalnet -->
+          <div class="featured-project reveal">
+            <div class="project-image">
+              <a
+                href="https://my.ideaalnet.org/"
+                target="_blank"
+                rel="noopener"
+              >
+                <img src="./images/project-7.png" alt="Ideaalnet" />
+                <div class="project-image-overlay"></div>
+              </a>
+            </div>
+            <div class="project-info">
+              <p class="project-label">Featured Project</p>
+              <h3>
+                <a
+                  href="https://my.ideaalnet.org/"
+                  target="_blank"
+                  rel="noopener"
+                  >Ideaalnet</a
+                >
+              </h3>
+              <div class="project-desc">
+                <p>
+                  A web platform unifying NL schools, students, parents, and
+                  suppliers to facilitate the distribution of educational
+                  devices. Features role-specific dashboards with tailored views
+                  and integrated location maps.
+                </p>
+              </div>
+              <ul class="project-tech">
+                <li>PHP</li>
+                <li>Symfony</li>
+                <li>React</li>
+                <li>MySQL</li>
+                <li>Elasticsearch</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  href="https://my.ideaalnet.org/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="External link"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kraakman -->
+          <div class="featured-project featured-project--reverse reveal">
+            <div class="project-image">
+              <a href="https://kraakman.com/" target="_blank" rel="noopener">
+                <img src="./images/project-8.png" alt="Kraakman" />
+                <div class="project-image-overlay"></div>
+              </a>
+            </div>
+            <div class="project-info">
+              <p class="project-label">Featured Project</p>
+              <h3>
+                <a href="https://kraakman.com/" target="_blank" rel="noopener"
+                  >Kraakman</a
+                >
+              </h3>
+              <div class="project-desc">
+                <p>
+                  A vast online marketplace for trucks, tractors, and heavy
+                  machinery in the Netherlands. Serves individual buyers and
+                  large-scale dealers with flexible purchasing, exchange, and
+                  installment options.
+                </p>
+              </div>
+              <ul class="project-tech">
+                <li>Elasticsearch</li>
+                <li>React</li>
+                <li>MySQL</li>
+                <li>Symfony</li>
+                <li>PHP</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  href="https://kraakman.com/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="External link"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CSI Fresh -->
+          <div class="featured-project reveal">
+            <div class="project-image">
+              <a
+                href="https://csi-fresh.com/en/"
+                target="_blank"
+                rel="noopener"
+              >
+                <img src="./images/project-9.png" alt="CSI Fresh" />
+                <div class="project-image-overlay"></div>
+              </a>
+            </div>
+            <div class="project-info">
+              <p class="project-label">Featured Project</p>
+              <h3>
+                <a
+                  href="https://csi-fresh.com/en/"
+                  target="_blank"
+                  rel="noopener"
+                  >CSI Fresh</a
+                >
+              </h3>
+              <div class="project-desc">
+                <p>
+                  A major logistics hub overseeing all transportation modes
+                  &mdash; land, sea, and air &mdash; handling thousands of daily
+                  shipments across the Netherlands. Coordinates with a vast
+                  network of large-scale vendors.
+                </p>
+              </div>
+              <ul class="project-tech">
+                <li>PHP</li>
+                <li>Symfony</li>
+                <li>React</li>
+                <li>MySQL</li>
+                <li>Third-Party APIs</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  href="https://csi-fresh.com/en/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="External link"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Riskline -->
+          <div class="featured-project featured-project--reverse reveal">
+            <div class="project-image">
+              <a href="https://www.riskline.com" target="_blank" rel="noopener">
+                <img src="./images/project-6.jpeg" alt="Riskline" />
+                <div class="project-image-overlay"></div>
+              </a>
+            </div>
+            <div class="project-info">
+              <p class="project-label">Featured Project</p>
+              <h3>
+                <a
+                  href="https://www.riskline.com"
+                  target="_blank"
+                  rel="noopener"
+                  >Riskline</a
+                >
+              </h3>
+              <div class="project-desc">
+                <p>
+                  A travel risk management platform serving travellers
+                  worldwide. Includes multiple sub-products for risk assessment,
+                  alerts, and compliance &mdash; managed as Technical PM and
+                  Team Lead.
+                </p>
+              </div>
+              <ul class="project-tech">
+                <li>AWS</li>
+                <li>EmberJS</li>
+                <li>MongoDB</li>
+                <li>Ruby on Rails</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  href="https://www.riskline.com"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="External link"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other Projects Grid -->
+        <h3 class="other-projects-title reveal">Other Noteworthy Projects</h3>
+        <div class="projects-grid">
+          <!-- Zvendo -->
+          <div class="project-card reveal">
+            <div class="project-card-header">
+              <i class="far fa-folder"></i>
+              <div class="project-card-links">
+                <a href="https://zvendo.com/" target="_blank" rel="noopener"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Zvendo E-commerce</h4>
+            <p>
+              A multivendor platform where merchants create their own stores
+              without coding, using an intuitive interface builder.
+            </p>
+            <ul class="project-card-tech">
+              <li>PHP</li>
+              <li>Sylius</li>
+              <li>Symfony</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+
+          <!-- Stacks -->
+          <div class="project-card reveal" style="animation-delay: 0.1s">
+            <div class="project-card-header">
+              <i class="far fa-folder"></i>
+              <div class="project-card-links">
+                <a
+                  href="https://stacksmarket.co/"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Stacks</h4>
+            <p>
+              A multivendor store builder where merchants create stores and
+              mobile apps using preset themes and a web interface.
+            </p>
+            <ul class="project-card-tech">
+              <li>Angular</li>
+              <li>MySQL</li>
+              <li>WordPress</li>
+              <li>PHP</li>
+            </ul>
+          </div>
+
+          <!-- Belshifa -->
+          <div class="project-card reveal" style="animation-delay: 0.2s">
+            <div class="project-card-header">
+              <i class="far fa-folder"></i>
+              <div class="project-card-links">
+                <a href="https://belshifa.com/" target="_blank" rel="noopener"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Belshifa Mobile App</h4>
+            <p>
+              A pharmacy app where users request prescriptions from nearby
+              pharmacies and get the best deals on medications.
+            </p>
+            <ul class="project-card-tech">
+              <li>PHP</li>
+              <li>Symfony</li>
+              <li>Swift</li>
+              <li>Kotlin</li>
+              <li>Elasticsearch</li>
+            </ul>
+          </div>
+
+          <!-- Evoline -->
+          <div class="project-card reveal">
+            <div class="project-card-header">
+              <i class="far fa-folder"></i>
+              <div class="project-card-links">
+                <a
+                  href="https://www.evoline.com/"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Evoline</h4>
+            <p>
+              An e-commerce platform for office furniture and workstations,
+              serving businesses across Europe.
+            </p>
+            <ul class="project-card-tech">
+              <li>PHP</li>
+              <li>Symfony</li>
+              <li>Twig</li>
+            </ul>
+          </div>
+
+          <!-- Land Fleet -->
+          <div class="project-card reveal" style="animation-delay: 0.1s">
+            <div class="project-card-header">
+              <i class="far fa-folder"></i>
+              <div class="project-card-links">
+                <a href="https://land-fleet.com/" target="_blank" rel="noopener"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Land Fleet</h4>
+            <p>
+              A transportation tracking app for petroleum companies &mdash;
+              managing drivers, vehicles, routes, and real-time tracking.
+            </p>
+            <ul class="project-card-tech">
+              <li>PHP</li>
+              <li>Symfony</li>
+              <li>Twig</li>
+            </ul>
+          </div>
+
+          <!-- 24/7 -->
+          <div class="project-card reveal" style="animation-delay: 0.2s">
+            <div class="project-card-header">
+              <i class="far fa-folder"></i>
+              <div class="project-card-links"></div>
+            </div>
+            <h4>24/7 Mobile App</h4>
+            <p>
+              A Saudi Arabian delivery app similar to Uber Eats. Built the admin
+              panel and full API layer for the platform.
+            </p>
+            <ul class="project-card-tech">
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>Google Maps API</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact">
+      <div class="section-container">
+        <div class="contact-content reveal">
+          <p class="section-number">05. What's Next?</p>
+          <h2>Get In Touch</h2>
+          <p class="contact-text">
+            Whether you need a senior engineer to build your product, a
+            technical PM to drive your project to delivery, or someone who can
+            do both &mdash; I'd love to hear from you. My inbox is always open.
+          </p>
+          <a
+            class="btn btn-primary btn-lg"
+            href="https://calendly.com/atalaat-92/short-discussion?month=2022-02"
+            target="_blank"
+            rel="noopener"
+          >
+            Say Hello
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="social-sidebar social-sidebar--left">
+        <a
+          href="https://github.com/hadress92"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/atalaat92/"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="Tel:+15137644115" aria-label="Phone">
+          <i class="fas fa-phone"></i>
+        </a>
+        <div class="sidebar-line"></div>
+      </div>
+
+      <div class="social-sidebar social-sidebar--right">
+        <a href="mailto:atalaat.92@gmail.com">atalaat.92@gmail.com</a>
+        <div class="sidebar-line"></div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-social-mobile">
+          <a href="https://github.com/hadress92" target="_blank" rel="noopener"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/atalaat92/"
+            target="_blank"
+            rel="noopener"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="Tel:+15137644115"><i class="fas fa-phone"></i></a>
+        </div>
+        <p>
+          <a href="mailto:atalaat.92@gmail.com">atalaat.92@gmail.com</a>
+        </p>
+        <p class="footer-credit">Built by Ahmed Talaat</p>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" title="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
